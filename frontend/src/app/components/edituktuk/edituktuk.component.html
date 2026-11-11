@@ -1,0 +1,52 @@
+
+<div mat-dialog-content class="main">
+    <form class="form">
+      <div class="card">
+      <mat-form-field class="field" appearance="fill">
+        <mat-label>Nom</mat-label>
+        <input matInput class="input_control" [(ngModel)]="editedTuktuk.nom" name="nom" required />
+       <!-- <input matInput class="input_control" formControlName="nom" placeholder="Nom" />
+        <mat-error *ngIf="myForm.get('nom').invalid">Nom est obligatoire</mat-error>  -->
+      </mat-form-field>
+  
+      <mat-form-field class="field" appearance="fill">
+        <mat-label>Téléphone</mat-label>        
+         <input matInput class="input_control" [(ngModel)]="editedTuktuk.telephone" name="telephone" required />
+        <!-- <input matInput class="input_control" formControlName="telephone" placeholder="Téléphone" />
+        <mat-error *ngIf="myForm.get('telephone').invalid">Num téléphone est obligatoire</mat-error>   -->
+      </mat-form-field>
+
+      <mat-form-field class="field" appearance="fill">
+        <mat-label>Matricule</mat-label>        
+        <input matInput class="input_control" [(ngModel)]="editedTuktuk.matricule" name="matricule" required />
+      </mat-form-field>
+      <mat-form-field class="field" appearance="fill">
+        <mat-label>N.Serie</mat-label>        
+        <input matInput class="input_control" [(ngModel)]="editedTuktuk.nserie" name="nserie" required />
+        <!-- <input matInput class="input_control" formControlName="matricule" placeholder="Matricule" /> 
+        <mat-error *ngIf="myForm.get('matricule').invalid">Matricule est obligatoire</mat-error>  -->
+      </mat-form-field>
+      <mat-form-field class="field" appearance="fill">
+        <mat-label>Wilaya</mat-label>        
+        <mat-select [(ngModel)]="editedTuktuk.wilaya" name="wilaya" required>
+          <mat-option *ngFor="let wilaya of wilayaOptions" [value]="wilaya">
+            {{ wilaya }}
+          </mat-option>
+        </mat-select>
+        <mat-error *ngIf="!editedTuktuk.wilaya">
+          Wilaya est obligatoire
+        </mat-error>
+      </mat-form-field>
+
+      <div class="field">
+        <mat-checkbox [(ngModel)]="editedTuktuk.logo" name="logo">Logo</mat-checkbox>
+      </div>
+    
+    </div>
+      <div mat-dialog-actions class="btns">
+        <button mat-button class="ann" (click)="cancelEdit()">Annuler</button>
+        <button mat-button class="add" (click)=" saveTuktuk() ">Enregistrer</button>
+      </div>
+    
+    </form>
+  </div>

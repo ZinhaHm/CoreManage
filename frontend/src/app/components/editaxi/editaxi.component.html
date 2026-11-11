@@ -1,0 +1,72 @@
+<div mat-dialog-content class="main">
+    <form >
+      <div class="card">
+      <mat-form-field class="field" appearance="fill">
+        <mat-label>Nom</mat-label>
+        <input matInput class="input_control" [(ngModel)]="editedTaxi.nom" name="nom" required />
+       <!-- <input matInput class="input_control" formControlName="nom" placeholder="Nom" />
+        <mat-error *ngIf="myForm.get('nom').invalid">Nom est obligatoire</mat-error>  -->
+      </mat-form-field>
+  
+      <mat-form-field class="field" appearance="fill">
+        <mat-label>Téléphone</mat-label>
+        
+         <input matInput class="input_control" [(ngModel)]="editedTaxi.telephone" name="telephone" required />
+        <!-- <input matInput class="input_control" formControlName="telephone" placeholder="Téléphone" />
+        <mat-error *ngIf="myForm.get('telephone').invalid">Num téléphone est obligatoire</mat-error>   -->
+      </mat-form-field>
+
+      <mat-form-field class="field" appearance="fill">
+        <mat-label>Matricule</mat-label>        
+        <input matInput class="input_control" [(ngModel)]="editedTaxi.matricule" name="matricule" required />
+        <!-- <input matInput class="input_control" formControlName="matricule" placeholder="Matricule" /> 
+        <mat-error *ngIf="myForm.get('matricule').invalid">Matricule est obligatoire</mat-error>  -->
+      </mat-form-field>
+
+      <mat-form-field class="field" appearance="fill">
+        <mat-label>Fédération</mat-label>        
+        <mat-select [(ngModel)]="editedTaxi.federation" name="federation" required>
+          <mat-option *ngFor="let federation of fedOptions" [value]="federation">
+            {{ federation }}
+          </mat-option>
+        </mat-select>
+        <mat-error *ngIf="!editedTaxi.federation">
+         selection de federation est obligatoire
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field class="field" appearance="fill">
+        <mat-label>Garage</mat-label>        
+        <input matInput class="input_control" [(ngModel)]="editedTaxi.garage" name="garage" required />
+      </mat-form-field>
+
+      <mat-form-field class="field" appearance="fill">
+        <mat-label>N.Serie</mat-label>        
+        <input matInput class="input_control" [(ngModel)]="editedTaxi.nserie" name="nserie" required />
+      </mat-form-field>
+
+      <mat-form-field class="field" appearance="fill">
+        <mat-label>Wilaya</mat-label>        
+        <mat-select [(ngModel)]="editedTaxi.wilaya" name="wilaya" required>
+          <mat-option *ngFor="let wilaya of wilayaOptions" [value]="wilaya">
+            {{ wilaya }}
+          </mat-option>
+        </mat-select>
+        <mat-error *ngIf="!editedTaxi.wilaya">
+          Wilaya est obligatoire
+        </mat-error>
+        <!-- <mat-error *ngIf=".get('wilaya')?.hasError('required')">
+          Wilaya est obligatoire
+        </mat-error> -->
+      </mat-form-field>
+
+
+    </div>
+      <div mat-dialog-actions class="btns">
+        <button mat-button class="ann" (click)="cancelEdit()">Annuler</button>
+        <button mat-button class="add" (click)=" saveTaxi() ">Enregistrer</button>
+      </div>
+    
+    </form>
+  </div>
+

@@ -1,0 +1,40 @@
+.menu{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between,center;
+  
+}
+.menu-item{
+    display: flex;
+    padding-left: 35px;
+    flex-direction: column;
+}
+
+.menu-item:hover{
+    transform: scale(1.1);
+    
+ }
+.menu-link{
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+  
+    
+}
+
+.menu-title{
+   color: #0b0b0b;
+   font-weight: bold;
+   font-family: 'Jost';
+}
+.menu-icon{
+    padding: 20px;
+}
+.menu-item,.image{
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Center the logo horizontally */
+    margin-bottom: 20px;
+    margin-left: 5px;
+}

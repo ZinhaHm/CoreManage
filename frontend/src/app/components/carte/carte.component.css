@@ -1,0 +1,68 @@
+table {
+    width: 100%;
+    padding-top: 35px;
+  }
+  .card{
+    display: flex;
+    flex-direction: column;
+    margin: 0% 1% 1% 1%;
+  }
+
+  .head{
+  display: flex;
+  justify-content: space-between; /* Align search bar to the left and button to the right */
+  align-items: center; /* Vertically center the content */
+  padding: 10px;  
+  background-color: #f8f9fa;
+
+  }
+  
+  .search{
+    position: relative;
+  display: inline-block;
+  }
+  .btns{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  .input{
+    display: flex;
+    padding: 13px 60px;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1 0 0;
+    align-self: stretch;
+    border-radius: 3.81px;
+    border: 0.952px solid var(--Grey-AA-Large, #949494);
+    color: var(--Text-Color, #1A1A1A);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  }
+  .icon{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 13px;
+  }
+.add{ 
+  display: flex;
+  width: 150px;
+  height: 47px;
+  float: right;  
+  border-radius: 2rem;
+  border: 1px solid var(--Secondary, #27AE60);
+  background: var(--Primary, #27AE60);
+  color: #090909;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  padding: 10px 16px;  
+  justify-content: center;  
+  align-items: center;
+}
+.add:hover{
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,189 @@
+{
+  "garage": [
+    {
+      "id": "1",
+      "nomg": "velouga",
+      "ligne": "Velouga_soukouk ",
+      "code": "14000",
+      "nvoitures": "21",
+      "federation": "FNT",
+      "wilaya": "N.Ouest",
+      "moughata": "toujounin",
+      "commune": "toujounin",
+      "nomr": "49801290",
+      "nnir": "2132546987",
+      "telephoner": "36332855"
+    },
+    {
+      "id": "a2ad",
+      "nomg": "soukouk",
+      "ligne": "soukouk-ould ebdou",
+      "code": "14100",
+      "nvoitures": "30",
+      "federation": "FGT",
+      "wilaya": "N.Nord",
+      "moughata": "Teyaret",
+      "commune": "teyaret",
+      "nomr": "ahmed",
+      "nnir": "569874123",
+      "telephoner": "35689467"
+    }
+  ],
+  "tuktuk": [
+    {
+      "id": "1",
+      "nom": "Vadala Saad ",
+      "telephone": "49801290",
+      "matricule": "6987KL02",
+      "nserie": "1",
+      "wilaya": "N.Ouest",
+      "logo": true
+    },
+    {
+      "id": "22c2",
+      "nom": "Abderahman khaled",
+      "telephone": "64659800",
+      "matricule": "5825RG00",
+      "nserie": "2",
+      "wilaya": "N.Sud",
+      "logo": true
+    },
+    {
+      "id": "7522",
+      "nom": "bibi",
+      "telephone": "78986452",
+      "matricule": "8521ki",
+      "nserie": "3/14",
+      "wilaya": "N.Nord",
+      "logo": true
+    },
+    {
+      "id": "df1f",
+      "nom": "hloo",
+      "telephone": "22332855",
+      "matricule": "65497123",
+      "nserie": "3/13",
+      "wilaya": "N.Ouest",
+      "logo": false
+    },
+    {
+      "id": "08b4",
+      "nom": "Test",
+      "telephone": "33284500",
+      "matricule": "2487LK00",
+      "nserie": "56789531",
+      "wilaya": "N.Sud",
+      "logo": true
+    }
+  ],
+  "taxi": [
+    {
+      "id": "3e7c",
+      "nom": "Ahmed",
+      "telephone": "22332855",
+      "matricule": "2356AB00",
+      "federation": "FGTN",
+      "garage": "Velouja",
+      "nserie": "2/13",
+      "wilaya": "N.Ouest"
+    },
+    {
+      "id": "540d",
+      "nom": "Zeinebou",
+      "telephone": "22332855",
+      "matricule": "1854657",
+      "federation": "FNT",
+      "garage": "soukouk",
+      "nserie": "1",
+      "wilaya": "N.Sud"
+    },
+    {
+      "id": "80b1",
+      "nom": "jiji",
+      "telephone": "97852200",
+      "matricule": "5752RT00",
+      "federation": "FAST",
+      "garage": "Soukouk",
+      "nserie": "3",
+      "wilaya": "N.Ouest"
+    },
+    {
+      "id": "4d12",
+      "nom": "Abderahman khaled",
+      "telephone": "32392734",
+      "matricule": "2882BN00",
+      "federation": "GTU",
+      "garage": "bmd",
+      "nserie": "4/14",
+      "wilaya": "N.Nord"
+    }
+  ],
+  "cartes": [
+    {
+      "id": "4",
+      "nom": "Vadala Saad Bouh",
+      "telephone": "49801290",
+      "matricule": "2009"
+    },
+    {
+      "id": "6",
+      "nom": "kelata Mhaimed",
+      "telephone": "42721509",
+      "matricule": "2005"
+    },
+    {
+      "id": "e907",
+      "nom": "Zeinebou",
+      "telephone": "22332855",
+      "matricule": "2880AB07"
+    },
+    {
+      "id": "ba40",
+      "nom": "Ahmed",
+      "telephone": "22332855",
+      "matricule": "336548"
+    },
+    {
+      "id": "310b",
+      "nom": "Emame",
+      "telephone": "36332855",
+      "matricule": "8547"
+    },
+    {
+      "id": "9f0c",
+      "nom": "selmoun",
+      "telephone": "658742",
+      "matricule": "5813RG"
+    },
+    {
+      "id": "9ce6",
+      "nom": "choukaka",
+      "telephone": "1854657",
+      "matricule": "32145GY"
+    },
+    {
+      "id": "2c6e",
+      "nom": "kati",
+      "telephone": "36382424",
+      "matricule": "0035AT00"
+    },
+    {
+      "id": "1e2b",
+      "nom": "3ezou",
+      "telephone": "20122221",
+      "matricule": "0024FG00"
+    },
+    {
+      "id": "9a15",
+      "nom": "salem",
+      "telephone": "49809002",
+      "matricule": "5623MK00"
+    },
+    {
+      "id": "f079",
+      "nom": "mohamed",
+      "telephone": "97852200",
+      "matricule": "7410MP03"
+    }
+  ]
+}

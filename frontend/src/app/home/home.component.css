@@ -1,0 +1,28 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.table-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px 0;  /* Space between the table and the title */
+    color: #27AE60;  /* Material Design blue color */
+    border-bottom: 2px solid #27AE60;  /* Adding a bottom border for emphasis */
+    padding-bottom: 10px;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  .download-btn{
+    display: flex;
+    float: right;
+  }
+  .title{
+     text-align: center;
+  color: #27AE60;
+  font-weight: bold;
+  }

@@ -1,0 +1,83 @@
+<div mat-dialog-content class="main">
+    <form >
+      <div class="card">
+
+        <mat-form-field class="field" appearance="fill">
+            <mat-label>Garage</mat-label>
+            <input matInput class="input_control" [(ngModel)]="editedGarage.nomg" name="nomg" required />
+          </mat-form-field>
+
+          <mat-form-field class="field" appearance="fill">
+            <mat-label>Ligne</mat-label>
+            <input matInput class="input_control" [(ngModel)]="editedGarage.ligne" name="ligne" required />
+          </mat-form-field>
+
+          <mat-form-field class="field" appearance="fill">
+            <mat-label>Code</mat-label>
+            <input matInput class="input_control" [(ngModel)]="editedGarage.code" name="code" required />
+          </mat-form-field>
+
+          
+          <mat-form-field class="field" appearance="fill">
+            <mat-label>Nb voitures</mat-label>
+            <input matInput class="input_control" [(ngModel)]="editedGarage.nvoitures" name="nvoitures" required />
+          </mat-form-field>
+
+      <mat-form-field class="field" appearance="fill">
+        <mat-label>Fédération</mat-label>        
+        <mat-select [(ngModel)]="editedGarage.federation" name="federation" required>
+          <mat-option *ngFor="let federation of fedOptions" [value]="federation">
+            {{ federation }}
+          </mat-option>
+        </mat-select>
+        <mat-error *ngIf="!editedGarage.federation">
+         selection de federation est obligatoire
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field class="field" appearance="fill">
+        <mat-label>Wilaya</mat-label>        
+        <mat-select [(ngModel)]="editedGarage.wilaya" name="wilaya" required>
+          <mat-option *ngFor="let wilaya of wilayaOptions" [value]="wilaya">
+            {{ wilaya }}
+          </mat-option>
+        </mat-select>
+        <mat-error *ngIf="!editedGarage.wilaya">
+          Wilaya est obligatoire
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field class="field" appearance="fill">
+        <mat-label> moughata</mat-label>
+        <input matInput class="input_control" [(ngModel)]="editedGarage.moughata" name="moughata" required />
+      </mat-form-field>
+
+      <mat-form-field class="field" appearance="fill">
+        <mat-label>Commmune</mat-label>
+        <input matInput class="input_control" [(ngModel)]="editedGarage.commune" name="commune" required />
+      </mat-form-field>
+
+      <mat-form-field class="field" appearance="fill">
+        <mat-label>Nom resp</mat-label>
+        <input matInput class="input_control" [(ngModel)]="editedGarage.nomr" name="nomr" required />
+      </mat-form-field>
+  
+      <mat-form-field class="field" appearance="fill">
+        <mat-label>NNI resp</mat-label>
+        <input matInput class="input_control" [(ngModel)]="editedGarage.nnir" name="nnir" required />
+      </mat-form-field>
+      <mat-form-field class="field" appearance="fill">
+        <mat-label>Téléphone</mat-label>        
+         <input matInput class="input_control" [(ngModel)]="editedGarage.telephoner" name="telephoner" required />
+      </mat-form-field>
+  
+
+
+    </div>
+      <div mat-dialog-actions class="btns">
+        <button mat-button class="ann" (click)="cancelEdit()">Annuler</button>
+        <button mat-button class="add" (click)=" saveGarage() ">Enregistrer</button>
+      </div>
+    
+    </form>
+</div>

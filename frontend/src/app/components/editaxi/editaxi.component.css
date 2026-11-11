@@ -1,0 +1,44 @@
+.add{ 
+    display: flex;
+    width: 150px;
+    height: 47px;
+    /* float: right;   */
+    border-radius: 2rem;
+    border: 1px solid var(--Secondary, #27AE60);
+    background: var(--Primary, #27AE60);
+    color: #090909;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    padding: 10px 16px;  
+    justify-content: center;  
+    align-items: center;
+  }
+  .ann{
+    display: flex;
+    width: 150px;
+    height: 47px;
+    /* float: right;   */
+    border-radius: 2rem;
+    border: 1px solid var(--Secondary, #E44D5F);
+    background: var(--Primary, #E44D5F);
+    color: #090909;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    padding: 10px 16px;  
+    justify-content: center;  
+    align-items: center;
+  }
+  
+  .field{    
+    display: flex;
+     justify-content: center,space-between; 
+  }
+  
+  
+  .btns{
+    justify-content: center;
+  
+  
+  }

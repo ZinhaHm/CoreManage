@@ -1,0 +1,97 @@
+<div mat-dialog-content class="main">
+    <form [formGroup]="myForm">
+      <div class="card">
+      <mat-form-field class="field" appearance="fill">
+        <mat-label>Nom</mat-label>
+        <input matInput class="input_control" formControlName="nom" placeholder="Nom" />
+        <div
+        *ngIf="
+          myForm.controls['nom'].invalid &&
+          (myForm.controls['nom'].dirty ||
+          myForm.controls['nom'].touched)
+        "
+        class="error-requred-input"
+      >
+        <div *ngIf="myForm.get('nom')?.errors?.['required']">
+          Nom est obligatoire
+        </div>
+      </div> 
+      </mat-form-field>
+  
+      <mat-form-field class="field" appearance="fill">
+        <mat-label>Téléphone</mat-label>
+        <input matInput class="input_control" formControlName="telephone" placeholder="Téléphone" />
+
+        <div
+        *ngIf="
+          myForm.controls['telephone'].invalid &&
+          (myForm.controls['telephone'].dirty ||
+          myForm.controls['telephone'].touched)
+        "
+        class="error-requred-input"
+      >
+        <div *ngIf="myForm.get('telephone')?.errors?.['required']">
+        Numéro de  telephone est obligatoire
+        </div>
+      </div>
+   
+
+      </mat-form-field>
+
+      <mat-form-field class="field" appearance="fill">
+        <mat-label>Matricule</mat-label>
+        <input matInput class="input_control" formControlName="matricule" placeholder="Matricule" />
+
+        <div
+        *ngIf="
+          myForm.controls['matricule'].invalid &&
+          (myForm.controls['matricule'].dirty ||
+          myForm.controls['matricule'].touched)
+        "
+        class="error-requred-input"
+      >
+        <div *ngIf="myForm.get('matricule')?.errors?.['required']">
+          Matricule est obligatoire
+        </div>
+      </div>
+      </mat-form-field>
+      <mat-form-field class="field" appearance="fill">
+        <mat-label>N.Serie</mat-label>
+        <input matInput class="input_control" formControlName="nserie" placeholder="Nserie" />
+
+        <div
+        *ngIf="
+          myForm.controls['nserie'].invalid &&
+          (myForm.controls['nserie'].dirty ||
+          myForm.controls['nserie'].touched)
+        "
+        class="error-requred-input"
+      >
+        <div *ngIf="myForm.get('nserie')?.errors?.['required']">
+         N.Serie est obligatoire
+        </div>
+      </div>
+      </mat-form-field>
+      <mat-form-field class="field" appearance="fill">
+        <mat-label>Wilaya</mat-label>
+        <mat-select formControlName="wilaya" required>
+          <mat-option *ngFor="let wilaya of wilayaOptions" [value]="wilaya">
+            {{ wilaya }}
+          </mat-option>
+        </mat-select>
+        <mat-error *ngIf="myForm.get('wilaya')?.hasError('required')">
+          Wilaya est obligatoire
+        </mat-error>
+      </mat-form-field>
+         <div class="field">          
+          <mat-checkbox formControlName="logo">logo</mat-checkbox> 
+         </div>   
+     
+    </div>
+      <div mat-dialog-actions class="btns">
+        <button mat-button class="ann" type="button" (click)="closeDialog()">Annuler</button>
+        <button mat-button class="add" type="button" (click)="addTuktuk()" [disabled]="myForm.invalid" >Enregistrer</button>
+      </div>
+    
+    </form>
+  </div>

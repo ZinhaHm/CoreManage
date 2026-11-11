@@ -1,0 +1,33 @@
+﻿# Angular dependencies
+frontend/node_modules/
+
+# Angular build files
+frontend/dist/
+frontend/.angular/
+
+# Java build files
+backend/target/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Sensitive configuration
+**/application-local.properties
+**/application-secret.properties
+
+# IDE files
+.vscode/
+.idea/
+*.iml
+
+# Operating system
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+!backend/
+backend/target/
+!backend/HELP.md
